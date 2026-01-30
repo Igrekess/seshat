@@ -1,5 +1,9 @@
 # Seshat
 
+<p align="center">
+  <img src="Seshat/Resources/Seshat_Logo.png" alt="Seshat Logo" width="200">
+</p>
+
 **Application native macOS d'aide à la correction de copies manuscrites et à la création de devoirs**
 
 ---
