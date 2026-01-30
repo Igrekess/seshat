@@ -134,7 +134,7 @@ Ce projet est distribué sous licence **CC BY-NC-SA 4.0** (Creative Commons Attr
 
 **Selon les conditions suivantes :**
 - **Attribution** : Vous devez créditer l'œuvre, intégrer un lien vers la licence et indiquer si des modifications ont été effectuées
-- **Pas d'Utilisation Commerciale** : Vous n'êtes pas autorisé à faire un usage commercial de cette œuvre
+- **Pas d'Utilisation Commerciale** : Vous n'êtes pas autorisé à faire un usage commercial de cette application
 - **Partage dans les Mêmes Conditions** : Si vous remixez, transformez ou créez à partir du matériel, vous devez diffuser vos contributions sous la même licence
 
 Voir le fichier [LICENSE](LICENSE) pour les détails complets.
