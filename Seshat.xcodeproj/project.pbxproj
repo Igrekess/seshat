@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C9454372F2A3849003B01F6 /* QwenAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9454362F2A3849003B01F6 /* QwenAnalysisService.swift */; };
+		2C9454392F2A386E003B01F6 /* ChandraMLXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9454382F2A386E003B01F6 /* ChandraMLXService.swift */; };
+		2C94543C2F2A3943003B01F6 /* MLXEmbedders in Frameworks */ = {isa = PBXBuildFile; productRef = 2C94543B2F2A3943003B01F6 /* MLXEmbedders */; };
+		2C94543E2F2A3943003B01F6 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 2C94543D2F2A3943003B01F6 /* MLXLLM */; };
+		2C9454402F2A3943003B01F6 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 2C94543F2F2A3943003B01F6 /* MLXLMCommon */; };
+		2C9454422F2A3943003B01F6 /* MLXVLM in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9454412F2A3943003B01F6 /* MLXVLM */; };
+		2C9454452F2A398E003B01F6 /* ModelDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9454432F2A398E003B01F6 /* ModelDownloadService.swift */; };
+		2C9454482F2A39BF003B01F6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9454462F2A39BF003B01F6 /* OnboardingView.swift */; };
+		2C94544C2F2A4D54003B01F6 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94544A2F2A4D54003B01F6 /* SplashScreenView.swift */; };
+		AA0000010000000000000000 /* GradeUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000000 /* GradeUtilities.swift */; };
+		AA0000010000000000000012 /* StringUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000012 /* StringUtilities.swift */; };
+		AA0000010000000000000001 /* SchoolModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000001 /* SchoolModels.swift */; };
+		AA0000010000000000000002 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000002 /* DataStore.swift */; };
+		AA0000010000000000000003 /* BatchProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000003 /* BatchProcessingService.swift */; };
+		AA0000010000000000000004 /* ClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000004 /* ClassroomView.swift */; };
+		AA0000010000000000000005 /* AddClassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000005 /* AddClassSheet.swift */; };
+		AA0000010000000000000006 /* AssignmentSubmissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000006 /* AssignmentSubmissionsView.swift */; };
+		AA0000010000000000000007 /* SubmissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000007 /* SubmissionDetailView.swift */; };
+		AA0000010000000000000008 /* StatisticsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000008 /* StatisticsViews.swift */; };
+		AA0000010000000000000009 /* RubricManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000009 /* RubricManagementView.swift */; };
+		AA0000010000000000000010 /* StudentProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000010 /* StudentProgressView.swift */; };
+		AA0000010000000000000011 /* BatchCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000011 /* BatchCropView.swift */; };
+		BB0000010000000000000001 /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000001 /* TestModels.swift */; };
+		BB0000010000000000000002 /* QuestionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000002 /* QuestionParser.swift */; };
+		BB0000010000000000000003 /* TestCreationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000003 /* TestCreationService.swift */; };
+		BB0000010000000000000004 /* CreateTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000004 /* CreateTestView.swift */; };
+		BB0000010000000000000005 /* ChatInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000005 /* ChatInterfaceView.swift */; };
+		BB0000010000000000000006 /* QuestionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000006 /* QuestionEditorView.swift */; };
+		BB0000010000000000000007 /* TestStructureSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000007 /* TestStructureSidebar.swift */; };
+		BB0000010000000000000008 /* TestPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000008 /* TestPreviewView.swift */; };
+		BB0000010000000000000009 /* NewTestSetupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000009 /* NewTestSetupSheet.swift */; };
+		BB0000010000000000000010 /* TestPDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000020000000000000010 /* TestPDFExportService.swift */; };
+		BB9602130066A74B42815F8D /* Seshat/Services/TestCreation/DocumentContextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA206E47F01334124BC5293 /* Seshat/Services/TestCreation/DocumentContextService.swift */; };
+		BBFC7F62700115428790986E /* Seshat/Views/CreateTest/ContextDocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61EEC4718523472DA3772D /* Seshat/Views/CreateTest/ContextDocumentsView.swift */; };
+		F10000010000000000000001 /* SeshatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000001 /* SeshatApp.swift */; };
+		F10000010000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000002 /* AppState.swift */; };
+		F10000010000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000003 /* ContentView.swift */; };
+		F10000010000000000000004 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000004 /* ImportView.swift */; };
+		F10000010000000000000005 /* TranscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000005 /* TranscriptionView.swift */; };
+		F10000010000000000000006 /* ValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000006 /* ValidationView.swift */; };
+		F10000010000000000000007 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000007 /* AnalysisView.swift */; };
+		F10000010000000000000008 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000008 /* ExportView.swift */; };
+		F10000010000000000000009 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000009 /* SettingsView.swift */; };
+		F10000010000000000000010 /* ToolbarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000010 /* ToolbarButtons.swift */; };
+		F10000010000000000000011 /* StudentCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000011 /* StudentCopy.swift */; };
+		F10000010000000000000012 /* TranscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000012 /* TranscriptionResult.swift */; };
+		F10000010000000000000013 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000013 /* BoundingBox.swift */; };
+		F10000010000000000000014 /* AnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000014 /* AnalysisResult.swift */; };
+		F10000010000000000000015 /* SeshatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000015 /* SeshatError.swift */; };
+		F10000010000000000000016 /* HTRModelLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000016 /* HTRModelLevel.swift */; };
+		F10000010000000000000017 /* HTRServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000017 /* HTRServiceProtocol.swift */; };
+		F10000010000000000000018 /* HTRServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000018 /* HTRServiceFactory.swift */; };
+		F10000010000000000000021 /* OllamaHTRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000021 /* OllamaHTRService.swift */; };
+		F10000010000000000000022 /* MockHTRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000022 /* MockHTRService.swift */; };
+		F10000010000000000000024 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000024 /* ConfigurationService.swift */; };
+		F10000010000000000000025 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000025 /* PDFExportService.swift */; };
+		F10000010000000000000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20000010000000000000026 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C9454362F2A3849003B01F6 /* QwenAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwenAnalysisService.swift; sourceTree = "<group>"; };
+		2C9454382F2A386E003B01F6 /* ChandraMLXService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChandraMLXService.swift; sourceTree = "<group>"; };
+		2C9454432F2A398E003B01F6 /* ModelDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDownloadService.swift; sourceTree = "<group>"; };
+		2C9454462F2A39BF003B01F6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2C94544A2F2A4D54003B01F6 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		2CDAACB12F2C2CA100881D57 /* Sheshat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sheshat.entitlements; sourceTree = "<group>"; };
+		AA0000020000000000000000 /* GradeUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeUtilities.swift; sourceTree = "<group>"; };
+		AA0000020000000000000012 /* StringUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilities.swift; sourceTree = "<group>"; };
+		AA0000020000000000000001 /* SchoolModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModels.swift; sourceTree = "<group>"; };
+		AA0000020000000000000002 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		AA0000020000000000000003 /* BatchProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchProcessingService.swift; sourceTree = "<group>"; };
+		AA0000020000000000000004 /* ClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomView.swift; sourceTree = "<group>"; };
+		AA0000020000000000000005 /* AddClassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassSheet.swift; sourceTree = "<group>"; };
+		AA0000020000000000000006 /* AssignmentSubmissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentSubmissionsView.swift; sourceTree = "<group>"; };
+		AA0000020000000000000007 /* SubmissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionDetailView.swift; sourceTree = "<group>"; };
+		AA0000020000000000000008 /* StatisticsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViews.swift; sourceTree = "<group>"; };
+		AA0000020000000000000009 /* RubricManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubricManagementView.swift; sourceTree = "<group>"; };
+		AA0000020000000000000010 /* StudentProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProgressView.swift; sourceTree = "<group>"; };
+		AA0000020000000000000011 /* BatchCropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCropView.swift; sourceTree = "<group>"; };
+		BB0000020000000000000001 /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
+		BB0000020000000000000002 /* QuestionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionParser.swift; sourceTree = "<group>"; };
+		BB0000020000000000000003 /* TestCreationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCreationService.swift; sourceTree = "<group>"; };
+		BB0000020000000000000004 /* CreateTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTestView.swift; sourceTree = "<group>"; };
+		BB0000020000000000000005 /* ChatInterfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInterfaceView.swift; sourceTree = "<group>"; };
+		BB0000020000000000000006 /* QuestionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEditorView.swift; sourceTree = "<group>"; };
+		BB0000020000000000000007 /* TestStructureSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStructureSidebar.swift; sourceTree = "<group>"; };
+		BB0000020000000000000008 /* TestPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreviewView.swift; sourceTree = "<group>"; };
+		BB0000020000000000000009 /* NewTestSetupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestSetupSheet.swift; sourceTree = "<group>"; };
+		BB0000020000000000000010 /* TestPDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPDFExportService.swift; sourceTree = "<group>"; };
+		BB61EEC4718523472DA3772D /* Seshat/Views/CreateTest/ContextDocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seshat/Views/CreateTest/ContextDocumentsView.swift; sourceTree = SOURCE_ROOT; };
+		BBA206E47F01334124BC5293 /* Seshat/Services/TestCreation/DocumentContextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seshat/Services/TestCreation/DocumentContextService.swift; sourceTree = SOURCE_ROOT; };
+		F00000010000000000000000 /* Seshat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seshat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20000010000000000000001 /* SeshatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeshatApp.swift; sourceTree = "<group>"; };
+		F20000010000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F20000010000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F20000010000000000000004 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		F20000010000000000000005 /* TranscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionView.swift; sourceTree = "<group>"; };
+		F20000010000000000000006 /* ValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationView.swift; sourceTree = "<group>"; };
+		F20000010000000000000007 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		F20000010000000000000008 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		F20000010000000000000009 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F20000010000000000000010 /* ToolbarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtons.swift; sourceTree = "<group>"; };
+		F20000010000000000000011 /* StudentCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCopy.swift; sourceTree = "<group>"; };
+		F20000010000000000000012 /* TranscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionResult.swift; sourceTree = "<group>"; };
+		F20000010000000000000013 /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		F20000010000000000000014 /* AnalysisResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisResult.swift; sourceTree = "<group>"; };
+		F20000010000000000000015 /* SeshatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeshatError.swift; sourceTree = "<group>"; };
+		F20000010000000000000016 /* HTRModelLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTRModelLevel.swift; sourceTree = "<group>"; };
+		F20000010000000000000017 /* HTRServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTRServiceProtocol.swift; sourceTree = "<group>"; };
+		F20000010000000000000018 /* HTRServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTRServiceFactory.swift; sourceTree = "<group>"; };
+		F20000010000000000000021 /* OllamaHTRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaHTRService.swift; sourceTree = "<group>"; };
+		F20000010000000000000022 /* MockHTRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTRService.swift; sourceTree = "<group>"; };
+		F20000010000000000000024 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		F20000010000000000000025 /* PDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportService.swift; sourceTree = "<group>"; };
+		F20000010000000000000026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F30000010000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C94543E2F2A3943003B01F6 /* MLXLLM in Frameworks */,
+				2C9454402F2A3943003B01F6 /* MLXLMCommon in Frameworks */,
+				2C9454422F2A3943003B01F6 /* MLXVLM in Frameworks */,
+				2C94543C2F2A3943003B01F6 /* MLXEmbedders in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5E05782F2B7BFB00027DF8 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BBA206E47F01334124BC5293 /* Seshat/Services/TestCreation/DocumentContextService.swift */,
+				BB61EEC4718523472DA3772D /* Seshat/Views/CreateTest/ContextDocumentsView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		2C9454442F2A398E003B01F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C9454432F2A398E003B01F6 /* ModelDownloadService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C9454472F2A39BF003B01F6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2C9454462F2A39BF003B01F6 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2C94544B2F2A4D54003B01F6 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2C94544A2F2A4D54003B01F6 /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		AA0000030000000000000001 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000020000000000000002 /* DataStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AA0000030000000000000002 /* Batch */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000020000000000000003 /* BatchProcessingService.swift */,
+			);
+			path = Batch;
+			sourceTree = "<group>";
+		};
+		AA0000030000000000000003 /* Classroom */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000020000000000000004 /* ClassroomView.swift */,
+				AA0000020000000000000005 /* AddClassSheet.swift */,
+				AA0000020000000000000006 /* AssignmentSubmissionsView.swift */,
+				AA0000020000000000000007 /* SubmissionDetailView.swift */,
+				AA0000020000000000000008 /* StatisticsViews.swift */,
+				AA0000020000000000000009 /* RubricManagementView.swift */,
+				AA0000020000000000000010 /* StudentProgressView.swift */,
+				AA0000020000000000000011 /* BatchCropView.swift */,
+			);
+			path = Classroom;
+			sourceTree = "<group>";
+		};
+		BB0000030000000000000001 /* TestCreation */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000020000000000000002 /* QuestionParser.swift */,
+				BB0000020000000000000003 /* TestCreationService.swift */,
+				BB0000020000000000000010 /* TestPDFExportService.swift */,
+			);
+			path = TestCreation;
+			sourceTree = "<group>";
+		};
+		BB0000030000000000000002 /* CreateTest */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000020000000000000004 /* CreateTestView.swift */,
+				BB0000020000000000000005 /* ChatInterfaceView.swift */,
+				BB0000020000000000000006 /* QuestionEditorView.swift */,
+				BB0000020000000000000007 /* TestStructureSidebar.swift */,
+				BB0000020000000000000008 /* TestPreviewView.swift */,
+				BB0000020000000000000009 /* NewTestSetupSheet.swift */,
+			);
+			path = CreateTest;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				F40000010000000000000001 /* Seshat */,
+				F40000010000000000000099 /* Products */,
+				2CDAACB12F2C2CA100881D57 /* Sheshat.entitlements */,
+				2C5E05782F2B7BFB00027DF8 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		F40000010000000000000001 /* Seshat */ = {
+			isa = PBXGroup;
+			children = (
+				F40000010000000000000002 /* App */,
+				F40000010000000000000003 /* Models */,
+				F40000010000000000000004 /* Services */,
+				F40000010000000000000005 /* Views */,
+				F40000010000000000000006 /* Resources */,
+			);
+			path = Seshat;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000001 /* SeshatApp.swift */,
+				F20000010000000000000002 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000011 /* StudentCopy.swift */,
+				F20000010000000000000012 /* TranscriptionResult.swift */,
+				F20000010000000000000013 /* BoundingBox.swift */,
+				F20000010000000000000014 /* AnalysisResult.swift */,
+				F20000010000000000000015 /* SeshatError.swift */,
+				F20000010000000000000016 /* HTRModelLevel.swift */,
+				AA0000020000000000000000 /* GradeUtilities.swift */,
+				AA0000020000000000000012 /* StringUtilities.swift */,
+				AA0000020000000000000001 /* SchoolModels.swift */,
+				BB0000020000000000000001 /* TestModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C9454442F2A398E003B01F6 /* Models */,
+				F40000010000000000000041 /* HTR */,
+				F40000010000000000000042 /* Analysis */,
+				F40000010000000000000043 /* Configuration */,
+				F40000010000000000000044 /* Export */,
+				AA0000030000000000000001 /* Data */,
+				AA0000030000000000000002 /* Batch */,
+				BB0000030000000000000001 /* TestCreation */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C94544B2F2A4D54003B01F6 /* SplashScreen */,
+				2C9454472F2A39BF003B01F6 /* Onboarding */,
+				F20000010000000000000003 /* ContentView.swift */,
+				F40000010000000000000051 /* Import */,
+				F40000010000000000000052 /* Transcription */,
+				F40000010000000000000053 /* Analysis */,
+				F40000010000000000000054 /* Export */,
+				F40000010000000000000055 /* Settings */,
+				F40000010000000000000056 /* Components */,
+				AA0000030000000000000003 /* Classroom */,
+				BB0000030000000000000002 /* CreateTest */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000026 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000041 /* HTR */ = {
+			isa = PBXGroup;
+			children = (
+				2C9454382F2A386E003B01F6 /* ChandraMLXService.swift */,
+				F20000010000000000000017 /* HTRServiceProtocol.swift */,
+				F20000010000000000000018 /* HTRServiceFactory.swift */,
+				F20000010000000000000021 /* OllamaHTRService.swift */,
+				F20000010000000000000022 /* MockHTRService.swift */,
+			);
+			path = HTR;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000042 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				2C9454362F2A3849003B01F6 /* QwenAnalysisService.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000043 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000024 /* ConfigurationService.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000044 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000025 /* PDFExportService.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000051 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000004 /* ImportView.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000052 /* Transcription */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000005 /* TranscriptionView.swift */,
+				F20000010000000000000006 /* ValidationView.swift */,
+			);
+			path = Transcription;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000053 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000007 /* AnalysisView.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000054 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000008 /* ExportView.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000055 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000009 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000056 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F20000010000000000000010 /* ToolbarButtons.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F40000010000000000000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00000010000000000000000 /* Seshat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50000010000000000000000 /* Seshat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70000010000000000000000 /* Build configuration list for PBXNativeTarget "Seshat" */;
+			buildPhases = (
+				F60000010000000000000000 /* Sources */,
+				F30000010000000000000000 /* Frameworks */,
+				F60000010000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seshat;
+			productName = CASS;
+			productReference = F00000010000000000000000 /* Seshat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F80000010000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F50000010000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F70000010000000000000001 /* Build configuration list for PBXProject "Seshat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = F40000010000000000000000;
+			packageReferences = (
+				2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+			);
+			productRefGroup = F40000010000000000000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50000010000000000000000 /* Seshat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F60000010000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10000010000000000000026 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F60000010000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000010000000000000000 /* GradeUtilities.swift in Sources */,
+				AA0000010000000000000012 /* StringUtilities.swift in Sources */,
+				AA0000010000000000000001 /* SchoolModels.swift in Sources */,
+				AA0000010000000000000002 /* DataStore.swift in Sources */,
+				AA0000010000000000000003 /* BatchProcessingService.swift in Sources */,
+				AA0000010000000000000004 /* ClassroomView.swift in Sources */,
+				AA0000010000000000000005 /* AddClassSheet.swift in Sources */,
+				AA0000010000000000000006 /* AssignmentSubmissionsView.swift in Sources */,
+				AA0000010000000000000007 /* SubmissionDetailView.swift in Sources */,
+				AA0000010000000000000008 /* StatisticsViews.swift in Sources */,
+				AA0000010000000000000009 /* RubricManagementView.swift in Sources */,
+				AA0000010000000000000010 /* StudentProgressView.swift in Sources */,
+				AA0000010000000000000011 /* BatchCropView.swift in Sources */,
+				2C9454482F2A39BF003B01F6 /* OnboardingView.swift in Sources */,
+				F10000010000000000000001 /* SeshatApp.swift in Sources */,
+				F10000010000000000000002 /* AppState.swift in Sources */,
+				F10000010000000000000003 /* ContentView.swift in Sources */,
+				F10000010000000000000004 /* ImportView.swift in Sources */,
+				F10000010000000000000005 /* TranscriptionView.swift in Sources */,
+				F10000010000000000000006 /* ValidationView.swift in Sources */,
+				2C9454392F2A386E003B01F6 /* ChandraMLXService.swift in Sources */,
+				2C9454372F2A3849003B01F6 /* QwenAnalysisService.swift in Sources */,
+				F10000010000000000000007 /* AnalysisView.swift in Sources */,
+				F10000010000000000000008 /* ExportView.swift in Sources */,
+				F10000010000000000000009 /* SettingsView.swift in Sources */,
+				F10000010000000000000010 /* ToolbarButtons.swift in Sources */,
+				F10000010000000000000011 /* StudentCopy.swift in Sources */,
+				F10000010000000000000012 /* TranscriptionResult.swift in Sources */,
+				F10000010000000000000013 /* BoundingBox.swift in Sources */,
+				F10000010000000000000014 /* AnalysisResult.swift in Sources */,
+				2C94544C2F2A4D54003B01F6 /* SplashScreenView.swift in Sources */,
+				F10000010000000000000015 /* SeshatError.swift in Sources */,
+				F10000010000000000000016 /* HTRModelLevel.swift in Sources */,
+				F10000010000000000000017 /* HTRServiceProtocol.swift in Sources */,
+				F10000010000000000000018 /* HTRServiceFactory.swift in Sources */,
+				F10000010000000000000021 /* OllamaHTRService.swift in Sources */,
+				F10000010000000000000022 /* MockHTRService.swift in Sources */,
+				F10000010000000000000024 /* ConfigurationService.swift in Sources */,
+				F10000010000000000000025 /* PDFExportService.swift in Sources */,
+				2C9454452F2A398E003B01F6 /* ModelDownloadService.swift in Sources */,
+				BB0000010000000000000001 /* TestModels.swift in Sources */,
+				BB0000010000000000000002 /* QuestionParser.swift in Sources */,
+				BB0000010000000000000003 /* TestCreationService.swift in Sources */,
+				BB9602130066A74B42815F8D /* Seshat/Services/TestCreation/DocumentContextService.swift in Sources */,
+				BB0000010000000000000004 /* CreateTestView.swift in Sources */,
+				BBFC7F62700115428790986E /* Seshat/Views/CreateTest/ContextDocumentsView.swift in Sources */,
+				BB0000010000000000000005 /* ChatInterfaceView.swift in Sources */,
+				BB0000010000000000000006 /* QuestionEditorView.swift in Sources */,
+				BB0000010000000000000007 /* TestStructureSidebar.swift in Sources */,
+				BB0000010000000000000008 /* TestPreviewView.swift in Sources */,
+				BB0000010000000000000009 /* NewTestSetupSheet.swift in Sources */,
+				BB0000010000000000000010 /* TestPDFExportService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F90000010000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2MG6C9J56H;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F90000010000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2MG6C9J56H;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F90000010000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Seshat/Seshat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Seshat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 CASS. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seshat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F90000010000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Seshat/Seshat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Seshat;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 CASS. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seshat.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F70000010000000000000000 /* Build configuration list for PBXNativeTarget "Seshat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90000010000000000000002 /* Debug */,
+				F90000010000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70000010000000000000001 /* Build configuration list for PBXProject "Seshat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90000010000000000000000 /* Debug */,
+				F90000010000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.30.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C94543B2F2A3943003B01F6 /* MLXEmbedders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXEmbedders;
+		};
+		2C94543D2F2A3943003B01F6 /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		2C94543F2F2A3943003B01F6 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		2C9454412F2A3943003B01F6 /* MLXVLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C94543A2F2A3943003B01F6 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXVLM;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F80000010000000000000000 /* Project object */;
+}
